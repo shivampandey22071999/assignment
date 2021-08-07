@@ -20,6 +20,6 @@ final_df.dropna()
 x=[final_df.iloc[0]['customer_name']+"="+final_df.iloc[0]['product_name'],final_df.iloc[1]['customer_name']+"="+final_df.iloc[1]['product_name'],final_df.iloc[2]['customer_name']+"="+final_df.iloc[2]['product_name']]
 y=[final_df.iloc[0]['order_value'],final_df.iloc[1]['order_value'],final_df.iloc[2]['order_value']]
 data=[go.Bar(x=x,y=y)]
-layout=go.Layout(title="vaue of order against customer")
+layout=go.Layout(title="value of order against customer")
 fig = go.Figure(data=data, layout=layout)
 fig.show()
